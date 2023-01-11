@@ -14,8 +14,7 @@ Mainly for fun and for some learning experience and the challenge.\
 
 ### `Is this open source?`
 <strong>YES!</strong> this is open source and you can change this to your hearts content.\
-You are <strong>NOT</strong> allowed to redistribute it commercially though.\
-Not even the scripts and packages that you have made on it, the point of this project is to be completely free for all users.\
+And you are allowed to do whatever is allowed according to the MIT License.\
 
 ### `Roadmap(as of 2023-01-11)`
 <li><strong>First usable. version: Meow 0.010, Build: Pizdrydulka.</strong></li>

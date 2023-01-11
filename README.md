@@ -2,7 +2,7 @@
 A console app mimicking a very lightwight os.
 Based on my cat :D
 
-![Alt text](Images/loadingSplash.jpg?raw=true "Title")\
+![Alt text](Images/loadingSplash.jpg?raw=true "Title")
 
 ### `What this is?`
 This is a small console app that mimics a lightwieght terminal os just like Debian but without a modern user interface.\

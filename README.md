@@ -31,7 +31,7 @@ Not even the scripts and packages that you have made on it, the point of this pr
   <li>Implement user creation and login - []</li>
 </ol>
 
-###<strong>`More might be added to this roadmap with time...`</strong>\
+<strong>`More might be added to this roadmap with time...`</strong>
 
 ### `Updates`
 No updates yet because there is no finished build\\

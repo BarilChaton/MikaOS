@@ -19,15 +19,15 @@ And you are allowed to do whatever is allowed according to the MIT License.\
 ### `Roadmap(as of 2023-01-11)`
 <li><strong>First usable. version: Meow 0.010, Build: Pizdrydulka.</strong></li>
 <ol>
-  <li>Implement system folders - [ x ]</li>
-  <li>Implement basic system file creation - [ x ]</li>
-  <li>Implement loading on bootup - [ x ]</li>
-  <li>Implement menu system for arrow key navigation - [ x ]</li>
-  <li>Implement user creating folders - [ ]</li>
-  <li>Implement user creating files - [ ]</li>
-  <li>Implement user editing folders and files - [ ]</li>
-  <li>Implement user setting permissions to folders and files - [ ]</li>
-  <li>Implement user creation and login - [ ]</li> 
+  - [x] Implement system folders.\
+  - [x] Implement basic system file creation.\
+  - [x] Implement loading on bootup.\
+  - [x] Implement menu system for arrow key navigation.\
+  - [] Implement user creating folders.\
+  - [] Implement user creating files.\
+  - [] Implement user editing folders and files.\
+  - [] Implement user setting permissions to folders and files.\
+  - [] Implement user creation and login.\
 </ol>
 
 <strong>`More might be added to this roadmap with time...`</strong>

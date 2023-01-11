@@ -31,6 +31,6 @@ And you are allowed to do whatever is allowed according to the MIT License.\
 <strong>More might be added to this roadmap with time...</strong>
 
 ### `Updates`
-No updates yet because there is no finished build\\
+No updates yet because there is no finished build\
 
 Created and designed by Baril Chaton.

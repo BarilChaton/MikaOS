@@ -20,15 +20,15 @@ Not even the scripts and packages that you have made on it, the point of this pr
 ### `Roadmap(as of 2023-01-11)`
 <li><strong>First usable. version: Meow 0.010, Build: Pizdrydulka.</strong></li>
 <ol>
-  <li>Implement system folders</li> - [x]
-  <li>Implement basic system file creation</li> - [x]
-  <li>Implement loading on bootup</li> - [x]
-  <li>Implement menu system for arrow key navigation</li> - [x]
-  <li>Implement user creating folders</li> - []
-  <li>Implement user creating files</li> - []
-  <li>Implement user editing folders and files</li> - []
-  <li>Implement user setting permissions to folders and files</li> - []
-  <li>Implement user creation and login</li> - []
+  <li>Implement system folders - [x]</li>
+  <li>Implement basic system file creation - [x]</li>
+  <li>Implement loading on bootup - [x]</li>
+  <li>Implement menu system for arrow key navigation - [x]</li>
+  <li>Implement user creating folders - []</li>
+  <li>Implement user creating files - []</li>
+  <li>Implement user editing folders and files - []</li>
+  <li>Implement user setting permissions to folders and files - []</li>
+  <li>Implement user creation and login - []</li> 
 </ol>
 
 <strong>`More might be added to this roadmap with time...`</strong>

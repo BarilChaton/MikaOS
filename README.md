@@ -29,7 +29,8 @@ Not even the scripts and packages that you have made on it, the point of this pr
   <li>Implement user editing folders and files - []</li>
   <li>Implement user setting permissions to folders and files - []</li>
   <li>Implement user creation and login - []</li>
-</ol>\
+</ol>
+
 ###`<strong>More might be added to this roadmap with time...`
 
 ### `Updates`

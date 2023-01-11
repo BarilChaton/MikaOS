@@ -17,7 +17,7 @@ Mainly for fun and for some learning experience and the challenge.\
 And you are allowed to do whatever is allowed according to the MIT License.\
 
 ### `Roadmap(as of 2023-01-11)`
-####<strong>First usable. version: Meow 0.010, Build: Pizdrydulka.</strong>
+#### <strong>First usable. version: Meow 0.010, Build: Pizdrydulka.</strong>
 - [x] Implement system folders.\
 - [x] Implement basic system file creation.\
 - [x] Implement loading on bootup.\

@@ -18,7 +18,7 @@ You are <strong>NOT</strong> allowed to redistribute it commercially though.\
 Not even the scripts and packages that you have made on it, the point of this project is to be completely free for all users.\
 
 ### `Roadmap(as of 2023-01-11)`
-<li>### `First usable. version: Meow 0.010, Build: Pizdrydulka.`</li>
+###<li> `First usable. version: Meow 0.010, Build: Pizdrydulka.`</li>
 <ol>
   <li>Implement system folders - [x]</li>
   <li>Implement basic system file creation - [x]</li>
@@ -29,8 +29,8 @@ Not even the scripts and packages that you have made on it, the point of this pr
   <li>Implement user editing folders and files - []</li>
   <li>Implement user setting permissions to folders and files - []</li>
   <li>Implement user creation and login - []</li>
-  ####`<strong>More might be added to this roadmap with time...`
 </ol>\
+###`<strong>More might be added to this roadmap with time...`
 
 ### `Updates`
 No updates yet because there is no finished build\\

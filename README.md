@@ -17,16 +17,16 @@ Mainly for fun and for some learning experience and the challenge.\
 And you are allowed to do whatever is allowed according to the MIT License.\
 
 ### `Roadmap(as of 2023-01-11)`
-<li><strong>First usable. version: Meow 0.010, Build: Pizdrydulka.</strong></li>
-  - [x] Implement system folders. \
-  - [x] Implement basic system file creation. \
-  - [x] Implement loading on bootup. \
-  - [x] Implement menu system for arrow key navigation. \
-  - [] Implement user creating folders. \
-  - [] Implement user creating files. \
-  - [] Implement user editing folders and files. \
-  - [] Implement user setting permissions to folders and files. \
-  - [] Implement user creation and login. \
+<strong>First usable. version: Meow 0.010, Build: Pizdrydulka.</strong>
+- [x] Implement system folders.\
+- [x] Implement basic system file creation.\
+- [x] Implement loading on bootup.\
+- [x] Implement menu system for arrow key navigation.\
+- [ ] Implement user creating folders.\
+- [ ] Implement user creating files.\
+- [ ] Implement user editing folders and files.\
+- [ ] Implement user setting permissions to folders and files.\
+- [ ] Implement user creation and login.\
 
 <strong>`More might be added to this roadmap with time...`</strong>
 

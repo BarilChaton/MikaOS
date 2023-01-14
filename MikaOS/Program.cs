@@ -19,6 +19,10 @@ namespace MikaOS
             Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
             ShowWindow(ThisConsole, MAXIMIZE);
 
+            // Disable scrolling.
+            Console.BufferHeight = Console.WindowHeight;
+            Console.BufferWidth = Console.WindowWidth;
+
             // Start Bootup, this will load all files in the future.
             BootSplash.RunBootupSequence();
         }

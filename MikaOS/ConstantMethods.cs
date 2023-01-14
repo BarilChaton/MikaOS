@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,10 +19,10 @@ namespace MikaOS
         }
 
         // A dot loader.
-        public static void DotLoader()
+        public static void DotLoader(string currentMessage)
         {
             string[] loadDots = { " ", ".", "..", "..." };
-            string message = "Checking for sub directories";
+            string message = currentMessage;
 
             int x = Console.CursorLeft;
             int y = Console.CursorTop;
@@ -49,6 +50,24 @@ namespace MikaOS
                 {
                     break;
                 }
+            }
+        }
+
+        public static void CheckForUsers()
+        {
+            string userListPath = "OSData/Users/users.mol";
+            string currentDir = Directory.GetCurrentDirectory();
+            string filePath = Path.Combine(currentDir, userListPath);
+
+            if (File.ReadLines(userListPath).Skip(1).Count() == 0)
+            {
+                Console.WriteLine("No users yet.");
+                Delay(2);
+            }
+            else
+            {
+                Console.WriteLine("There are users.");
+                Delay(2);
             }
         }
 

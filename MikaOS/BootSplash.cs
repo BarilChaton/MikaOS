@@ -6,9 +6,7 @@ using System.Text;
 namespace MikaOS
 {
     class BootSplash
-    {
-        // Class global vars:
-        
+    {    
 
         //This method is the entry point to this class.
         public static void RunBootupSequence()
@@ -18,7 +16,7 @@ namespace MikaOS
         }
 
         // Method for checking for system directories.
-        // If none existent then create it.
+        // If none existent then create them.
         public static void CheckOsDir(string dir)
         {
             int delay = 2;
@@ -52,6 +50,8 @@ namespace MikaOS
         // If none existent then create them.
         public static void CheckSubDir(string parentDir, string[] subDir)
         {
+            string checkMessage = "Checking for required files";
+
             foreach (string i in subDir) 
             {
                 string subPath = Path.Combine(parentDir, i);
@@ -60,7 +60,7 @@ namespace MikaOS
                     Directory.CreateDirectory(subPath);
                 }
             }
-            ConstantMethods.DotLoader();
+            ConstantMethods.DotLoader(checkMessage);
         }
 
         // Method to create a file in one of the folders.
@@ -133,6 +133,9 @@ namespace MikaOS
             Console.SetCursorPosition(leftWelcome, topWelcome);
             Console.WriteLine("Welcome to MikaOS. Meow!");
             ConstantMethods.Delay(delay);
+            Console.Clear();
+            Console.SetCursorPosition(leftWelcome, topWelcome);
+            ConstantMethods.CheckForUsers();
             Console.ResetColor();
             Program.AfterBoot();
         }

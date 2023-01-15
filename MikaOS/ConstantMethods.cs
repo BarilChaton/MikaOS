@@ -55,14 +55,17 @@ namespace MikaOS
 
         public static void CheckForUsers()
         {
-            string userListPath = "OSData/Users/users.mol";
+            string userListPath = "OSData/Users/.users";
             string currentDir = Directory.GetCurrentDirectory();
             string filePath = Path.Combine(currentDir, userListPath);
 
             if (File.ReadLines(userListPath).Skip(1).Count() == 0)
             {
-                Console.WriteLine("No users found. You need atleast one!");
-                Delay(3);
+                Console.WriteLine("No users detected...");
+                Delay(2);
+                Console.Clear();
+                Console.WriteLine("Lets create one now!");
+                Delay(2);
                 User.CreateUser();
             }
             else

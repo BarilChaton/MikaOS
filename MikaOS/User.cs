@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace MikaOS
 {
@@ -38,17 +39,30 @@ namespace MikaOS
             Console.Clear();
             Console.SetCursorPosition(left, top);
             string confirmPassword = GetHiddenInput("Confirm Password: ");
+
+            //Check for password validation.
+            while (password != confirmPassword)
+            {
+                Console.Clear();
+                Console.SetCursorPosition(left, top);
+                Console.WriteLine("Passwords do not match. Please re-enter your password:");
+                password = GetHiddenInput("Enter Password: ");
+                Console.Clear();
+                Console.SetCursorPosition(left, top);
+                confirmPassword = GetHiddenInput("Confirm Password: ");
+            }
+
             Console.Clear();
             Console.SetCursorPosition(left, top);
             Console.Write("Enter Email: ");
-            string email = Console.ReadLine();
+            string email = CheckEmailFormat(Console.ReadLine());
             Console.Clear();
             Console.SetCursorPosition(left, top);
             Console.Write("Enter Name: ");
             string name = Console.ReadLine();
             Console.Clear();
             Console.SetCursorPosition(left, top);
-            Console.Write("Enter LastName: ");
+            Console.Write("Enter Lastname: ");
             string lastName = Console.ReadLine();
             Console.Clear();
 
@@ -59,9 +73,30 @@ namespace MikaOS
                 userID = GenerateUserID();
             }
 
-            User newUser = new User(userName, password, email, name, lastName, userID);
+            User newUser = new User(userName, confirmPassword, email, name, lastName, userID);
 
             SaveUser(newUser);
+        }
+
+        public static string CheckEmailFormat(string email)
+        {
+            int top = Console.WindowHeight / 2;
+            int left = Console.WindowWidth / 2 - 16;
+
+            const string pattern = @"^(?("")("".+?(?<!\\)""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" +
+                                   @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-0-9a-z]*[0-9a-z]*\.)+[a-z0-9][\-a-z0-9]{0,22}[a-z0-9]))$";
+
+            if (!Regex.IsMatch(email, pattern, RegexOptions.IgnoreCase))
+            {
+                Console.SetCursorPosition(left, top);
+                Console.Write("Invalid email format, Please re-enter yout email: ");
+                email = Console.ReadLine();
+                return CheckEmailFormat(email);
+            }
+            else
+            {
+                return email;
+            }
         }
 
         public static string GenerateUserID()
@@ -72,7 +107,7 @@ namespace MikaOS
 
         public static bool CheckForExistID(string id)
         {
-            var lines = File.ReadLines("OSData/Users/users.mol").Skip(1);
+            var lines = File.ReadLines("OSData/Users/.users").Skip(1);
             foreach (var line in lines)
             {
                 if (line.Contains(id))
@@ -116,7 +151,7 @@ namespace MikaOS
 
         public static void SaveUser(User user)
         {
-            string path = "OSData/Users/users.mol";
+            string path = "OSData/Users/.users";
             string userData = user.UserName + ":" + user.Password + ":" + user.Email + ":" + user.Name + ":" + user.LastName + ":" + user.UserID + "\n";
             File.AppendAllText(path, userData + Environment.NewLine);
         }

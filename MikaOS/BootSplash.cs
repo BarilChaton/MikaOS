@@ -33,14 +33,14 @@ namespace MikaOS
                 Directory.CreateDirectory(path);
                 Console.WriteLine(dir + " created");
                 CheckSubDir(path, systemSubDirs);
-                CreateFile(Path.Combine(path, systemSubDirs[0]), "users.mol");
+                CreateFile(Path.Combine(path, systemSubDirs[0]), ".users");
                 ConstantMethods.Delay(delay);
             }
             else
             {
                 Console.WriteLine(dir + " found!");
                 CheckSubDir(path, systemSubDirs);
-                CreateFile(Path.Combine(path, systemSubDirs[0]), "users.mol");
+                CreateFile(Path.Combine(path, systemSubDirs[0]), ".users");
                 ConstantMethods.Delay(delay);
             }
             Console.ResetColor();
@@ -79,8 +79,9 @@ namespace MikaOS
                     using (FileStream fs = File.Create(filePath))
                     {
                         // If you want to write something in the file, you can use the stream object
-                        byte[] text = new UTF8Encoding(true).GetBytes("Users:");
-                        fs.Write(text, 0, text.Length);
+                        string text = "Users: " + Environment.NewLine;
+                        byte[] bytes = new UTF8Encoding(true).GetBytes(text);
+                        fs.Write(bytes, 0, bytes.Length);
                     }
                 }
             }

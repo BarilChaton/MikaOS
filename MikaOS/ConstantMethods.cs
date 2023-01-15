@@ -61,8 +61,9 @@ namespace MikaOS
 
             if (File.ReadLines(userListPath).Skip(1).Count() == 0)
             {
-                Console.WriteLine("No users yet.");
-                Delay(2);
+                Console.WriteLine("No users found. You need atleast one!");
+                Delay(3);
+                User.CreateUser();
             }
             else
             {

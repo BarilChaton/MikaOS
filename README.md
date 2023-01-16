@@ -27,7 +27,7 @@ And you are allowed to do whatever is allowed according to the MIT License.\
 - [ ] Implement user creating files.
 - [ ] Implement user editing folders and files.
 - [ ] Implement user setting permissions to folders and files.
-- [/] Implement user creation and login.
+- [ ] Implement user creation and login.
 
 <strong>More might be added to this roadmap with time...</strong>
 

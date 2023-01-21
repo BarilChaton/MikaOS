@@ -35,10 +35,10 @@ namespace MikaOS
             string userName = Console.ReadLine();
             Console.Clear();
             Console.SetCursorPosition(left, top);
-            string password = GetHiddenInput("Enter Password: ");
+            string password = ConstantMethods.GetHiddenInput("Enter Password: ");
             Console.Clear();
             Console.SetCursorPosition(left, top);
-            string confirmPassword = GetHiddenInput("Confirm Password: ");
+            string confirmPassword = ConstantMethods.GetHiddenInput("Confirm Password: ");
 
             //Check for password validation.
             while (password != confirmPassword)
@@ -46,10 +46,10 @@ namespace MikaOS
                 Console.Clear();
                 Console.SetCursorPosition(left, top);
                 Console.WriteLine("Passwords do not match. Please re-enter your password:");
-                password = GetHiddenInput("Enter Password: ");
+                password = ConstantMethods.GetHiddenInput("Enter Password: ");
                 Console.Clear();
                 Console.SetCursorPosition(left, top);
-                confirmPassword = GetHiddenInput("Confirm Password: ");
+                confirmPassword = ConstantMethods.GetHiddenInput("Confirm Password: ");
             }
 
             Console.Clear();
@@ -116,36 +116,6 @@ namespace MikaOS
                 }
             }
             return false;
-        }
-
-        public static string GetHiddenInput(string message)
-        {
-            Console.Write(message);
-            string input = "";
-            ConsoleKeyInfo key;
-
-            do
-            {
-                key = Console.ReadKey(true);
-
-                if (key.Key != ConsoleKey.Backspace && key.Key != ConsoleKey.Enter)
-                {
-                    input += key.KeyChar;
-                    Console.Write("*");
-                }
-                else
-                {
-                    if (key.Key == ConsoleKey.Backspace && input.Length > 0)
-                    {
-                        input = input.Substring(0, (input.Length - 1));
-                        Console.Write("\b \b");
-                    }
-                }
-            }
-            while (key.Key != ConsoleKey.Enter);
-
-            Console.WriteLine();
-            return input;
         }
 
 

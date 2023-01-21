@@ -138,7 +138,7 @@ namespace MikaOS
             Console.SetCursorPosition(leftWelcome, topWelcome);
             ConstantMethods.CheckForUsers();
             Console.ResetColor();
-            Program.AfterBoot();
+            Login.RunLoginSequence();
         }
     }
 }

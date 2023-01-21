@@ -16,17 +16,18 @@ Mainly for fun and for some learning experience and the challenge.\
 <strong>YES!</strong> this is open source and you can change this to your hearts content.\
 And you are allowed to do whatever is allowed according to the MIT License.\
 
-### `Roadmap(as of 2023-01-11)`
+### `Roadmap(as of 2023-01-16)`
 #### <strong>First usable. version: Meow 0.010, Build: Pizdrydulka.</strong>
 - [x] Implement system folders.
-- [x] Implement basic system file creation.
+- [x] Implement basic system file creation on bootup (if non existent).
 - [x] Implement loading on bootup.
 - [x] Implement menu system for arrow key navigation.
+- [x] Implement user creation (for the moment it only works when the program is checking contents of a .users file. And happens if there is nothing in the file.)
+- [ ] Implement user creation and login (As mentioned above, partially implemented).
 - [ ] Implement user creating folders.
 - [ ] Implement user creating files.
 - [ ] Implement user editing folders and files.
 - [ ] Implement user setting permissions to folders and files.
-- [ ] Implement user creation and login.
 
 <strong>More might be added to this roadmap with time...</strong>
 
